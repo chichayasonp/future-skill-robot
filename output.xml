@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-10T12:51:24.340882" rpa="false" schemaversion="5">
+<suite id="s1" name="Registertest" source="C:\Users\chich\OneDrive\Desktop\Future Skill_Robot Frame work\Test Robot\Testcases\Registertest.robot">
+<test id="s1-t1" name="1. Open Future Skill Website" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:24.816342" level="INFO">Opening browser 'chrome' to base url 'https://app.futureskill.co/login'.</msg>
+<arg>https://app.futureskill.co/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-10T12:51:24.815746" elapsed="8.694197"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-10T12:51:33.510412" elapsed="0.041147"/>
+</kw>
+<status status="PASS" start="2026-02-10T12:51:24.814509" elapsed="8.739382"/>
+</test>
+<test id="s1-t2" name="2. User can register Future Skill successfully (Step 1-5)" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:33.556275" level="INFO">Opening browser 'chrome' to base url 'https://app.futureskill.co/register'.</msg>
+<arg>https://app.futureskill.co/register</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-10T12:51:33.555960" elapsed="3.762877"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-10T12:51:37.319210" elapsed="0.048565"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:input[placeholder="อีเมล"]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-10T12:51:37.368485" elapsed="0.042478"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:37.411711" level="INFO">Typing text 'testuser@email.com' into text field 'css:input[placeholder="อีเมล"]'.</msg>
+<arg>css:input[placeholder="อีเมล"]</arg>
+<arg>testuser@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:37.411340" elapsed="0.257244"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:37.669289" level="INFO">Typing text 'Test' into text field 'css:input[placeholder="ชื่อ"]'.</msg>
+<arg>css:input[placeholder="ชื่อ"]</arg>
+<arg>Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:37.668950" elapsed="0.232395"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:37.902210" level="INFO">Typing text 'User' into text field 'css:input[placeholder="นามสกุล"]'.</msg>
+<arg>css:input[placeholder="นามสกุล"]</arg>
+<arg>User</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:37.901814" elapsed="0.078680"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:37.981171" level="INFO">Typing text '0812345678' into text field 'css:input[placeholder="เบอร์โทรศัพท์"]'.</msg>
+<arg>css:input[placeholder="เบอร์โทรศัพท์"]</arg>
+<arg>0812345678</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:37.980857" elapsed="0.083299"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:38.064748" level="INFO">Typing text 'Test@1234' into text field 'css:input[placeholder="รหัสผ่าน"]'.</msg>
+<arg>css:input[placeholder="รหัสผ่าน"]</arg>
+<arg>Test@1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:38.064483" elapsed="0.090199"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:38.155507" level="INFO">Typing text 'Test@1234' into text field 'css:input[placeholder="ยืนยันรหัสผ่าน"]'.</msg>
+<arg>css:input[placeholder="ยืนยันรหัสผ่าน"]</arg>
+<arg>Test@1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:38.155157" elapsed="0.080328"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:38.236459" level="INFO">Clicking element 'css:input[type="checkbox"]'.</msg>
+<arg>css:input[type="checkbox"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:38.236014" elapsed="0.141985"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:button[type="submit"]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-10T12:51:38.378539" elapsed="0.027789"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-10T12:51:38.407135" level="INFO">Clicking element 'css:button[type="submit"]'.</msg>
+<arg>css:button[type="submit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T12:51:38.406734" elapsed="0.107351"/>
+</kw>
+<status status="PASS" start="2026-02-10T12:51:33.555252" elapsed="4.959335"/>
+</test>
+<test id="s1-t3" name="3. The system display Verify OTP page" line="37">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์</arg>
+<arg>15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-10T12:51:38.516414" elapsed="1.274838"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-10T12:51:42.792618" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-10T12:51:39.791681" elapsed="3.001177"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-10T12:51:42.793350" elapsed="2.274197"/>
+</kw>
+<status status="PASS" start="2026-02-10T12:51:38.515645" elapsed="6.552337"/>
+</test>
+<status status="PASS" start="2026-02-10T12:51:24.344515" elapsed="20.724222"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Registertest" id="s1" pass="3" fail="0" skip="0">Registertest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
